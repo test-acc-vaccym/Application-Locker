@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gesturebg"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:ignore="UselessLeaf,HardcodedText,ContentDescription,NestedWeights" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+        
+    <ImageButton
+        android:id="@+id/backallpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="10dip"
+        android:src="@drawable/backallpagebutton" 
+        android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="65"
+        android:orientation="vertical"
+        ></LinearLayout>
+    
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:gestureStrokeType="multiple"
+        android:background="@drawable/patternfield"/>
+
+    <LinearLayout
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/submit"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/okbuttonselector"
+            android:onClick="addGesture"
+            android:background="@null"
+            android:enabled="false" />
+    </LinearLayout>
+
+</LinearLayout>

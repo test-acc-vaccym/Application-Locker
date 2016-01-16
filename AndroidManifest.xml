@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rockin.applock2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="5"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rockin.applock2.StringLock"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="stringlockapplock" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.StringLockFirstTime"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="stringlockfirsttimeapplock" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.InstalledApps"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="installedappsapplock" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.PatternLock"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="patternlockapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.GestureLock"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="gesturelockapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.GestureLockFirstTime"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="gesturelockfirsttimeapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.GestureChecker"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="gesturecheckerapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.NumericLock"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="numericlockapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.NumericLockFirstTime"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="numericlockfirsttimeapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.Chooser"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="chooserapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.StringLockChange"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="stringlockchangeapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.GestureLockChange"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="gesturelockchangeapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.NumericLockChange"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="numericlockchangeapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.SplashScreen"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.ForgotPassword"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="forgotpasswordapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.LockSelector"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="lockselectorapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.Instructions"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="instructionsapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.AboutUs"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="aboutusapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.rockin.applock2.FormFilling"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+            <intent-filter>
+                <action android:name="formfillingapplock" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.rockin.applock2.PolicyActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+        </activity>
+        
+        <activity
+            android:name="com.rockin.applock2.RZoneActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            >
+        </activity>
+        
+        <activity
+    		android:name="group.pals.android.lib.ui.lockpattern.LockPatternActivity"
+   			android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+    		android:screenOrientation="user"
+    		android:theme="@style/Alp.Theme.Dark" />
+        <service android:name="com.rockin.applock2.ServiceAppLock"></service>
+        <receiver android:name="com.rockin.applock2.BootReceiver">
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

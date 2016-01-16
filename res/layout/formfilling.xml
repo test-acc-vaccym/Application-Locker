@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/patternbg"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".FormFilling"
+    tools:ignore="HardcodedText,ContentDescription,UselessLeaf" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+        
+    <ImageButton
+        android:id="@+id/backallpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="10dip"
+        android:src="@drawable/backallpagebutton"
+        android:layout_marginTop="5dp" />
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="10"
+        >
+        <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@null"
+        android:layout_weight="0.07"
+        />
+        <EditText
+        android:id="@+id/name"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="Name"
+        android:textColorHint="#38546b"
+        android:background="@null"
+        android:layout_weight="0.9" 
+        >
+    </EditText>   
+    </LinearLayout>
+    
+<LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:orientation="horizontal"
+        android:background="@drawable/edittextbackground"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_weight="10"
+        >
+        <LinearLayout 
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@null"
+        android:layout_weight="0.07"
+        />
+        <EditText
+        android:id="@+id/emailid"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="Email Id"
+        android:textColorHint="#38546b"
+        android:background="@null"
+        android:inputType="textEmailAddress"
+        android:layout_weight="0.9" 
+        >
+    </EditText>   
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+    <ImageButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/okbuttonselector"
+        android:layout_gravity="center"
+        android:background="@null"/>
+
+</LinearLayout>

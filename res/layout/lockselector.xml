@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hp"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".LockSelector"
+    tools:ignore="HardcodedText,ContentDescription,UselessLeaf,NestedWeights" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+        
+    <ImageButton
+        android:id="@+id/backallpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="10dip"
+        android:src="@drawable/backallpagebutton"
+        android:layout_marginTop="5dp" />
+
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        ></LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        >
+    
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+        <ImageButton
+        android:id="@+id/stringlock"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/stringlockbuttonselector"
+        android:layout_weight="0.425"
+        />
+        
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+        <ImageButton
+        android:id="@+id/numericlock"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.425"
+        android:background="@drawable/numericlockbuttonselector"
+        />
+        
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        >
+        
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+        <ImageButton
+        android:id="@+id/patternlock"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:background="@drawable/patternlockbuttonselector"
+        android:layout_weight="0.425"
+         />
+        
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+        <ImageButton
+        android:id="@+id/gesturelock"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="0.425"
+        android:background="@drawable/gesturelockbuttonselector"
+        />
+        
+        <LinearLayout 
+        	android:layout_width="0dip"
+        	android:layout_height="match_parent"
+        	android:layout_weight="0.05"
+        	android:orientation="horizontal"
+        	></LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

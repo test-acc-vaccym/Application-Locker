@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gesturebg"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".GestureChecker"
+    tools:ignore="HardcodedText,UselessLeaf,ContentDescription" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+        
+    <ImageButton
+        android:id="@+id/backallpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingLeft="10dip"
+        android:src="@drawable/backallpagebutton" 
+        android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="45"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gesture"
+        android:background="@drawable/patternfield"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip" 
+        android:layout_weight="30"
+        android:gestureStrokeType="multiple"
+        >
+    </android.gesture.GestureOverlayView>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+</LinearLayout>

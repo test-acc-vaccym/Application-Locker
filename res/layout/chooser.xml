@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/commonbackground"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".Chooser"
+    tools:ignore="HardcodedText,ContentDescription,UselessLeaf" >
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="horizontal" >
+    
+    <ImageButton
+        android:id="@+id/rzone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingRight="10dip"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/rzonebutton" />
+    
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:orientation="vertical"
+        >
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/changepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:src="@drawable/selectapplockbuttonselector"
+        android:background="@null"
+        />
+    
+    <ImageButton
+        android:id="@+id/changeapplist"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:background="@null"
+        android:src="@drawable/changeapplistbuttonselector"
+        />
+
+    <ImageButton
+        android:id="@+id/forgotpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:src="@drawable/forgotpasswordbuttonselector"
+        android:background="@null"
+        />
+
+    <ImageButton
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@null"
+        android:src="@drawable/instructionsbuttonselector" />
+
+    <ImageButton
+        android:id="@+id/aboutus"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:background="@null"
+        android:src="@drawable/aboutusbuttonselector" />
+    
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:background="@null"
+        android:src="@drawable/exitbuttonselector"
+        />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+</LinearLayout>
